@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div class="app-bg">
+    <header class="app-header">
+      <div class="profile">
+        <img id="user-avatar" alt="User Avatar">
+        <span id="user-name"></span>
+      </div>
+      <button id="sign-out" class="signout-btn">Sign Out</button>
+    </header>
+    <main class="app-main">
+      <form id="task-form" class="task-form">
+        <input type="text" id="task-input" placeholder="Add a new task..." required>
+        <select id="priority-input" required>
+          <option value="" disabled selected>Priority</option>
+          <option value="1">Low</option>
+          <option value="2">Medium</option>
+          <option value="3">High</option>
+        </select>
+        <button type="submit" class="add-btn">+</button>
+      </form>
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <label for="filter-priority">Filter by Priority:</label>
+        <select id="filter-priority">
+          <option value="all">All</option>
+          <option value="3">High</option>
+          <option value="2">Medium</option>
+          <option value="1">Low</option>
+        </select>
+      </div>
+      <div class="stages">
+        <section class="stage" id="todo-stage">
+          <h2>Todo <span class="stage-count" id="todo-count">0</span></h2>
+          <div class="tasks" id="todo-tasks"></div>
+        </section>
+        <section class="stage" id="completed-stage">
+          <h2>Completed <span class="stage-count" id="completed-count">0</span></h2>
+          <div class="tasks" id="completed-tasks"></div>
+        </section>
+        <section class="stage" id="archived-stage">
+          <h2>Archived <span class="stage-count" id="archived-count">0</span></h2>
+          <div class="tasks" id="archived-tasks"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

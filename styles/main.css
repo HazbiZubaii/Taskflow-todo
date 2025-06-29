@@ -1,0 +1,58 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+input, button {
+  font-size: 1em;
+  padding: 0.6em;
+  margin: 0.5em 0;
+}
+button {
+  background: #0D8ABC;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0b6e99;
+}
+
+:root {
+  --primary: #6C63FF;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --muted: #6c757d;
+}
+body { font-family: 'Segoe UI', Arial, sans-serif; }
+h1, h2 { font-weight: 700; }
+button, select, input { font-family: inherit; }
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.filter-bar label {
+  color: #fff;
+  font-weight: 500;
+}
+#filter-priority {
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  border: none;
+  font-size: 1em;
+  background: #232946;
+  color: #fff;
+}

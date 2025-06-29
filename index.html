@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Do App - Welcome</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="landing-bg">
+    <div class="landing-container">
+      <div class="logo-square">
+        <img src="assets/mylogo4.png" alt="My To Do App Logo" style="width:200px; height:160px;">
+      </div>
+
+      <!-- <h1>TaskFlow</h1> -->
+      <p class="subtitle">Your Personal Productivity Companion</p>
+      <form id="registration-form">
+        <label>
+          Full Name
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </label>
+        <label>
+          Date of Birth
+          <input type="date" id="dob" placeholder="dd-mm-yyyy" required>
+        </label>
+        <button type="submit" class="gradient-btn">Verify &amp; Continue</button>
+        <div id="error-message"></div>
+      </form>
+      <p class="terms">
+        By continuing, you confirm that you are over 10 years old and agree to our terms of service.
+      </p>
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
